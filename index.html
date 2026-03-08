@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #ffe4ec;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 90%;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        padding: 14px 28px;
+        font-size: 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .red {
+        background: #f44336;
+        color: white;
+      }
+
+      .green {
+        background: #4caf50;
+        color: white;
+      }
+
+      img {
+        width: 300px;
+        max-width: 80%;
+        height: auto;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Qui aimes-tu le plus ?</h1>
+
+      <button class="red" onclick="page2()">Rayan</button>
+      <button class="green" onclick="page2()">Rayan</button>
+    </div>
+
+    <script>
+      function page2() {
+        document.body.innerHTML = `
+
+<div class="container">
+
+<img src="mom.png">
+
+<h1>Bonne fête des mères ❤️</h1>
+
+</div>
+
+`;
+      }
+    </script>
+  </body>
+</html>
